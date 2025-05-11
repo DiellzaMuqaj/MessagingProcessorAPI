@@ -40,7 +40,7 @@ Supports message queuing, processing, and monitoring via RESTful APIs and a simp
 
 - [.NET 9 SDK](https://dotnet.microsoft.com/)
 - Visual Studio 2022+ or VS Code
-- SQLite (no installation needed; uses local `.db` file)
+- SQLite (no installation needed; uses local `messages.db` file)
 
 ---
 
