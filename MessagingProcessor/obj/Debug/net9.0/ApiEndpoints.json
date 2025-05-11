@@ -1,0 +1,59 @@
+[
+  {
+    "ContainingType": "MessagingProcessor.Controllers.MessageController",
+    "Method": "SubmitMessage",
+    "RelativePath": "api/Message",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MessagingProcessor.DTO.MessageRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MessagingProcessor.Controllers.MessageController",
+    "Method": "GetAllMessages",
+    "RelativePath": "api/Message/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MessagingProcessor.Controllers.MessageController",
+    "Method": "GetStatistics",
+    "RelativePath": "api/Message/statistics",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MessagingProcessor.Controllers.MetricsController",
+    "Method": "GetMetricsSummary",
+    "RelativePath": "api/Metrics/summary",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

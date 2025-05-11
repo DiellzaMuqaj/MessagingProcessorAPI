@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "/eSDxN8maIJXcqPheHLAkGQBMwyYh8Sf5WVICU4XsYc=",
+  "Source": "MessagingProcessor",
+  "BasePath": "_content/MessagingProcessor",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
