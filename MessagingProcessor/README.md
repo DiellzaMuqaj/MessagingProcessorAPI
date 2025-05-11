@@ -50,7 +50,7 @@ The following optional components were implemented beyond the core requirements:
 - **Recovery mechanism for failed messages**  
   Unprocessed messages (with statuses `Pending`, `Processing`, or `Retried`) are reloaded from the database and re-enqueued on application startup.
 
-- ** Simple dashboard page showing system status**  
+- **Simple dashboard page showing system status**  
   A Razor Pages-based frontend provides a dashboard UI showing:
   - Real-time queue depth
   - Throughput over the last 10 seconds
@@ -58,10 +58,10 @@ The following optional components were implemented beyond the core requirements:
   - Paginated list of all messages
   - A separate statistics page to filter grouped counts by message status
 
-- ** Retry policies with exponential backoff**  
+- **Retry policies with exponential backoff**  
   Messages that fail to send are retried with an increasing delay based on exponential backoff (`2^RetryCount` seconds), up to 3 attempts.
 
-- ** Dead letter queue for permanently failed messages**  
+- **Dead letter queue for permanently failed messages**  
   Messages that exceed the retry limit are marked with a `DeadLetter` status and excluded from further processing.
 
 
@@ -69,7 +69,7 @@ The following optional components were implemented beyond the core requirements:
 
 ## Bonus Points Implemented
 
-- **Implementation of optional components beyond the minimum requirement
+- **Implementation of optional components beyond the minimum requirement**
    You implemented 4 optional components (Recovery, Retry with Backoff, Dead Letter Queue, UI Dashboard).
 
 - **Message Prioritization**  
