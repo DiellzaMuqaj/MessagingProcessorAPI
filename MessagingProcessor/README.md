@@ -57,7 +57,6 @@ dotnet run
 
 # 3. Open in browser:
 # API: https://localhost:7263/swagger
-# Dashboard: https://localhost:7185
 ```
 
 ---
@@ -84,17 +83,6 @@ Example payload for submitting a message:
 
 ---
 
-##  Dashboard Overview
-
-Built using Razor Pages and Bootstrap. Shows:
-
--  Real-time queue depth
--  Messages processed in the last 10 seconds
--  Current error rate
--  Message table with status and retry count
--  Form to send new messages
-
----
 
 ##  Validation Rules
 
@@ -127,6 +115,15 @@ dotnet test
 
 ---
 
+##  Assumptions
+
+- SQLite is sufficient for simulating persistence and durability.
+- Messages are processed sequentially with throttling, and no multithreading beyond async/await was required.
+- Retry strategy is exponential backoff, max 3 retries.
+- Prioritization uses a Priority field (1 = High, 2 = Medium, 3 = Low) and affects dequeue order.
+
+---
+
 ##  Architecture
 
 - Clean layered structure: Controller → Service → Repository
@@ -143,5 +140,5 @@ dotnet test
 Created as part of a .NET Developer Assessment.  
 **Author**: Diellza Muçaj 
 **Email**: muqajdiellza9@gmail.com 
-**GitHub**: [https://github.com/yourname]
+**GitHub**: https://github.com/DiellzaMuqaj
 
